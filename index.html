@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>작가 태그 조합기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'beige': {
+                '50': '#fdfbf6',
+                '100': '#faf7ee',
+                '200': '#f3eada',
+                '300': '#e8d8c0',
+                '400': '#debb7c',
+                '500': '#d0a562',
+                '600': '#b98a54',
+                '700': '#a1724d',
+                '800': '#885e49',
+                '900': '#724e41',
+                '950': '#422a22',
+              },
+              'warm-gray': {
+                '50': '#f8f7f6',
+                '100': '#efedea',
+                '200': '#e2e0dd',
+                '300': '#d1cdc8',
+                '400': '#b8b2ab',
+                '500': '#a29a92',
+                '600': '#8a8077',
+                '700': '#736a61',
+                '800': '#615852',
+                '900': '#514a45',
+                '950': '#312b28',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for webkit browsers */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #514a45; /* warm-gray-900 */
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #736a61; /* warm-gray-700 */
+        border-radius: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #8a8077; /* warm-gray-600 */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-warm-gray-950 text-beige-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
